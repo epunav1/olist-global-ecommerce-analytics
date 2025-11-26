@@ -1,4 +1,4 @@
--- Monthly revenue (sum of payment values per month)
+-- Monthly revenue (sum of payment values per month).
 SELECT
     DATE_FORMAT(o.order_purchase_timestamp, '%Y-%m') AS year_month,
     SUM(p.payment_value) AS total_revenue
